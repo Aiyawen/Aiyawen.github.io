@@ -5,6 +5,9 @@ theme: jekyll-theme-minimal
 url: "https://Aiyawen.github.io"
 baseurl: ""
 
+# 默认会把中文分类塞进 URL（变成 %E9%9A%8F%E7%AC%94 这种），改掉
+permalink: /:year/:month/:day/:title/
+
 # 中文文件名 / 中文标签需要，别删
 encoding: utf-8
 

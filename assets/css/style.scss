@@ -81,3 +81,23 @@
 }
 .main-content code { color: #c2410c; background: #fff7ed; }
 .main-content pre code { color: inherit; background: transparent; }
+/* ---- 首页两侧装饰图（固定背景）---- */
+body {
+  background-image:
+    linear-gradient(rgba(255,255,255,0.55), rgba(255,255,255,0.55)),
+    url('/assets/img/autumn-1.png'),
+    url('/assets/img/autumn-2.png');
+  background-position:
+    center,
+    left top 25%,
+    right top 25%;
+  background-size:
+    cover,
+    260px auto,
+    260px auto;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+body > .container,
+body > .main-content { position: relative; z-index: 1; }
+

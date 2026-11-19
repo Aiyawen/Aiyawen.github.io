@@ -1,6 +1,6 @@
 ---
 layout: default
-title: 首页
+title: Niki的空间
 ---
 
 # 文章

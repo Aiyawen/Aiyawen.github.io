@@ -60,11 +60,11 @@ title: NiKi的空间
       <div class="weather-box">
         <svg class="weather-icon" viewBox="0 0 40 40" width="38" height="38"><circle cx="20" cy="20" r="9" fill="#FAC775"/><g stroke="#FAC775" stroke-width="2"><path d="M20 3v5M20 32v5M3 20h5M32 20h5M8 8l3.5 3.5M28.5 28.5L32 32M32 8l-3.5 3.5M11.5 28.5L8 32"/></g></svg>
         <div>
-          <div class="weather-temp">6&deg;</div>
-          <div class="weather-desc">西安 &middot; 晴</div>
+          <div class="weather-temp">20&deg;</div>
+          <div class="weather-desc">西西亚 &middot; 晴</div>
         </div>
       </div>
-      <div class="panel-note">更新于 11-24 21:00</div>
+      <div class="panel-note">湿度 45% &middot; 风力 2 级</div>
     </section>
     <section class="home-col panel-card">
       <h2>正在听</h2>

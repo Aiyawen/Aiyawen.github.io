@@ -16,8 +16,13 @@ title: NiKi的空间
 
   <aside class="side-col side-left">
     <section class="home-col panel-tall">
-      <h2>左侧分栏</h2>
-      <div class="placeholder-box">内容待定</div>
+      <h2>关于本站</h2>
+      <p class="about-text">你好，我是 NiKi。<br><br>这里记录我关于新闻传播与 AI 前沿的思考，还有一些读书和生活的碎片。慢慢写，慢慢读。</p>
+      <div class="tag-list">
+        <span class="tag"># 新闻传播</span>
+        <span class="tag"># AI 前沿</span>
+        <span class="tag"># 读书笔记</span>
+      </div>
     </section>
   </aside>
 
@@ -50,12 +55,18 @@ title: NiKi的空间
 
   <aside class="side-col side-right">
     <section class="home-col panel-card">
-      <h2>卡片一</h2>
-      <div class="placeholder-box">内容待定</div>
+      <h2>文章分类</h2>
+      <ul class="cat-list">
+        <li><span>观察</span><span>1</span></li>
+        <li><span>随笔</span><span>1</span></li>
+      </ul>
     </section>
     <section class="home-col panel-card">
-      <h2>卡片二</h2>
-      <div class="placeholder-box">内容待定</div>
+      <h2>联系我</h2>
+      <div class="contact-list">
+        <a href="https://github.com/Aiyawen" target="_blank" rel="noopener">GitHub &rarr;</a>
+        <a href="/about/" >关于本站 &rarr;</a>
+      </div>
     </section>
   </aside>
 

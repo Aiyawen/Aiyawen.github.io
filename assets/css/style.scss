@@ -38,11 +38,11 @@ body { background-color: #fdf2f6; }
   border-bottom: 2px solid #fbcfe8;
   padding-bottom: 0.3em;
   margin-top: 0;
-  font-size: 22px;
+  font-size: 24px;
 }
 .panel-tall { flex: 1; }
-.panel-card { display: flex; flex-direction: column; }
-.panel-note { margin-top: 12px; font-size: 11px; color: #993556; }
+.panel-card { display: flex; flex-direction: column; flex: 1; }
+.panel-note { margin-top: 12px; font-size: 13px; color: #993556; }
 
 /* ---- 文章卡片 ---- */
 .post-list { list-style: none; padding-left: 0; margin-top: 16px; }
@@ -121,11 +121,37 @@ body { background-color: #fdf2f6; }
 /* ---- 天气 ---- */
 .weather-box { display: flex; align-items: center; gap: 10px; margin-top: 8px; }
 .weather-icon { flex-shrink: 0; }
-.weather-temp { font-size: 22px; font-weight: 500; color: #9d174d; }
-.weather-desc { font-size: 11px; color: #57534e; }
+.weather-temp { font-size: 28px; font-weight: 500; color: #9d174d; }
+.weather-desc { font-size: 14px; color: #57534e; }
 
-/* ---- 音乐 ---- */
-.music-box { margin-top: 8px; }
+/* ---- 音乐唱片 ---- */
+.vinyl-link { display: block; text-align: center; margin: 14px auto 0; width: max-content; }
+.vinyl {
+  width: 120px; height: 120px;
+  border-radius: 50%;
+  background: repeating-radial-gradient(circle at center, #2C2C2A 0, #2C2C2A 3px, #3a3a38 4px, #2C2C2A 5px);
+  display: flex; align-items: center; justify-content: center;
+  animation: vinyl-spin 5s linear infinite;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  position: relative;
+}
+.vinyl-label {
+  width: 52px; height: 52px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #fbcfe8;
+}
+.vinyl:after {
+  content: '';
+  position: absolute;
+  width: 8px; height: 8px;
+  border-radius: 50%;
+  background: #fdf2f6;
+}
+.vinyl-link:hover .vinyl { animation-play-state: paused; }
+@keyframes vinyl-spin { to { transform: rotate(360deg); } }
+.music-title { text-align: center; font-size: 16px; color: #9d174d; margin-top: 12px; font-weight: 500; }
+.music-artist { text-align: center; font-size: 13px; color: #993556; margin-top: 4px; }
 
 /* ---- 文章内页 ---- */
 .main-content h1, .main-content h2, .main-content h3 { color: #9d174d; }

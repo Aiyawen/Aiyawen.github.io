@@ -31,7 +31,7 @@
   // 文章卡片：弹小人 + 延迟跳转
   document.querySelectorAll('.post-list li a').forEach(function (a) {
     a.addEventListener('click', function (e) {
-      if (e.metaKey || e.ctrlKey || e.shiftKey || e.button !== 0) return;
+      if (e.metaKey || e.ctrlKey || e.shiftKey) return;
       e.preventDefault();
       var r = a.getBoundingClientRect();
       spawn(r.left + Math.min(r.width / 2, 120), r.top + 8);

@@ -90,3 +90,5 @@ title: NiKi的空间
 </div>
 
 <script src="/assets/js/panel.js"></script>
+
+<script src="/assets/js/click-effect.js"></script>

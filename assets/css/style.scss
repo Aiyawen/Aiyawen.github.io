@@ -122,3 +122,31 @@ body { background-color: #fdf2f6; }
   .hero .hero-text h1 { font-size: 28px; }
   .gallery-grid img { height: 200px; }
 }
+
+/* ---- 侧栏实际内容 ---- */
+.about-text { color: #57534e; font-size: 15px; line-height: 1.9; margin: 8px 0 18px; }
+.tag-list { display: flex; flex-wrap: wrap; gap: 8px; }
+.tag {
+  background: #fdf2f8;
+  border: 1px solid #fbcfe8;
+  color: #9d174d;
+  border-radius: 999px;
+  padding: 4px 12px;
+  font-size: 13px;
+}
+.cat-list { list-style: none; padding: 0; margin: 8px 0 0; }
+.cat-list li {
+  display: flex; justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px dashed #fbcfe8;
+  font-size: 14px; color: #57534e;
+}
+.contact-list { margin: 8px 0 0; }
+.contact-list a {
+  display: block;
+  color: #db2777;
+  text-decoration: none;
+  font-size: 14px;
+  padding: 6px 0;
+}
+.contact-list a:hover { color: #9d174d; }

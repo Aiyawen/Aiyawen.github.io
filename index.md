@@ -16,13 +16,14 @@ title: NiKi的空间
 
   <aside class="side-col side-left">
     <section class="home-col panel-tall">
-      <h2>关于本站</h2>
-      <p class="about-text">你好，我是 NiKi。<br><br>这里记录我关于新闻传播与 AI 前沿的思考，还有一些读书和生活的碎片。慢慢写，慢慢读。</p>
-      <div class="tag-list">
-        <span class="tag"># 新闻传播</span>
-        <span class="tag"># AI 前沿</span>
-        <span class="tag"># 读书笔记</span>
-      </div>
+      <h2>任务栏</h2>
+      <ul class="task-list">
+        <li class="done">完成博客改版</li>
+        <li>整理读书笔记</li>
+        <li>学一个新 AI 工具</li>
+        <li>下周推送排版</li>
+      </ul>
+      <div class="panel-note">清单内容可直接改 index.md</div>
     </section>
   </aside>
 
@@ -55,19 +56,38 @@ title: NiKi的空间
 
   <aside class="side-col side-right">
     <section class="home-col panel-card">
-      <h2>文章分类</h2>
-      <ul class="cat-list">
-        <li><span>观察</span><span>1</span></li>
-        <li><span>随笔</span><span>1</span></li>
-      </ul>
+      <h2>天气预报</h2>
+      <div class="weather-box" id="weather-box">
+        <svg class="weather-icon" viewBox="0 0 40 40" width="38" height="38"><circle cx="20" cy="20" r="9" fill="#FAC775"/><g stroke="#FAC775" stroke-width="2"><path d="M20 3v5M20 32v5M3 20h5M32 20h5M8 8l3.5 3.5M28.5 28.5L32 32M32 8l-3.5 3.5M11.5 28.5L8 32"/></g></svg>
+        <div>
+          <div class="weather-temp" id="weather-temp">--&deg;</div>
+          <div class="weather-desc" id="weather-desc">西安 · 加载中</div>
+        </div>
+      </div>
     </section>
     <section class="home-col panel-card">
-      <h2>联系我</h2>
-      <div class="contact-list">
-        <a href="https://github.com/Aiyawen" target="_blank" rel="noopener">GitHub &rarr;</a>
-        <a href="/about/" >关于本站 &rarr;</a>
+      <h2>正在听</h2>
+      <div class="music-box">
+        <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="66" src="https://music.163.com/outchain/player?type=2&amp;id=2123807718&amp;auto=0&amp;height=66"></iframe>
+        <div class="panel-note">Color Your Night · P3R</div>
       </div>
     </section>
   </aside>
 
 </div>
+
+<script>
+(function () {
+  function render(d) {
+    var t = document.getElementById('weather-temp');
+    var s = document.getElementById('weather-desc');
+    if (!t || !s || !d) return;
+    t.textContent = d.temp + '°';
+    s.textContent = '西安 · ' + d.weather + ' · ' + d.time;
+  }
+  fetch('/assets/data/weather.json?t=' + Date.now())
+    .then(function (r) { return r.json(); })
+    .then(render)
+    .catch(function () {});
+})();
+</script>

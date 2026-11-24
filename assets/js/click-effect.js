@@ -26,10 +26,23 @@
     }, 1600);
   }
 
+  // 勾选任务时弹小人
   document.querySelectorAll('.task-item').forEach(function (btn) {
     btn.addEventListener('click', function (e) {
       var r = btn.getBoundingClientRect();
       spawn(r.left + 20, r.top);
+    });
+  });
+
+  // 点文章时弹小人 + 延迟跳转
+  document.querySelectorAll('.post-list li a').forEach(function (a) {
+    a.addEventListener('click', function (e) {
+      if (e.metaKey || e.ctrlKey || e.shiftKey) return;
+      e.preventDefault();
+      var r = a.getBoundingClientRect();
+      spawn(r.left + Math.min(r.width / 2, 120), r.top + 8);
+      var href = a.href;
+      setTimeout(function () { window.location.href = href; }, 1500);
     });
   });
 })();

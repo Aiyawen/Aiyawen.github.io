@@ -23,7 +23,7 @@ title: NiKi的空间
         <li>学一个新 AI 工具</li>
         <li>下周推送排版</li>
       </ul>
-      <div class="panel-note">清单内容可直接改 index.md</div>
+      <div class="panel-note">&check; 已完成 &nbsp;/&nbsp; 待办清单</div>
     </section>
   </aside>
 
@@ -55,25 +55,24 @@ title: NiKi的空间
   </div>
 
   <aside class="side-col side-right">
-    <section class="home-col panel-card">
+    <section class="home-col panel-card weather-card">
       <h2>天气预报</h2>
-      <div class="weather-box" id="weather-box">
+      <div class="weather-box">
         <svg class="weather-icon" viewBox="0 0 40 40" width="38" height="38"><circle cx="20" cy="20" r="9" fill="#FAC775"/><g stroke="#FAC775" stroke-width="2"><path d="M20 3v5M20 32v5M3 20h5M32 20h5M8 8l3.5 3.5M28.5 28.5L32 32M32 8l-3.5 3.5M11.5 28.5L8 32"/></g></svg>
         <div>
-          <div class="weather-temp" id="weather-temp">--&deg;</div>
-          <div class="weather-desc" id="weather-desc">西安 · 加载中</div>
+          <div class="weather-temp">6&deg;</div>
+          <div class="weather-desc">西安 &middot; 晴</div>
         </div>
       </div>
+      <div class="panel-note">更新于 11-24 21:00</div>
     </section>
     <section class="home-col panel-card">
       <h2>正在听</h2>
       <div class="music-box">
         <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="66" src="https://music.163.com/outchain/player?type=2&amp;id=2123807718&amp;auto=0&amp;height=66"></iframe>
-        <div class="panel-note">Color Your Night · P3R</div>
+        <div class="panel-note">Color Your Night &middot; P3R</div>
       </div>
     </section>
   </aside>
 
 </div>
-
-<script src="/assets/js/weather.js"></script>

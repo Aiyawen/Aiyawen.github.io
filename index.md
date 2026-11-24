@@ -1,7 +1,16 @@
 ---
 layout: default
-title: Niki的空间
+title: NiKi的空间
 ---
+
+<div class="hero">
+  <img src="/assets/img/banner.jpg" alt="欢迎来到 NiKi 的空间" class="hero-img">
+  <div class="hero-shade"></div>
+  <div class="hero-text">
+    <h1>欢迎来到 NiKi 的空间</h1>
+    <p>Stay hungry, stay foolish.</p>
+  </div>
+</div>
 
 <div class="home-grid">
 
@@ -23,8 +32,10 @@ title: Niki的空间
   <section class="home-col home-gallery">
     <h2>图片</h2>
     <div class="gallery-grid">
-      <figure><img src="/assets/img/autumn-1.png" alt="秋景一"></figure>
-      <figure><img src="/assets/img/autumn-2.png" alt="秋景二"></figure>
+      <figure><img src="/assets/img/photo-1.jpg" alt="照片一"></figure>
+      <figure><img src="/assets/img/photo-2.jpg" alt="照片二"></figure>
+      <figure><img src="/assets/img/photo-3.jpg" alt="照片三"></figure>
+      <figure><img src="/assets/img/photo-4.jpg" alt="照片四"></figure>
     </div>
   </section>
 

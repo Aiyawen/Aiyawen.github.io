@@ -1,17 +1,13 @@
-title: 艾雅雯的博客
-description: 随手记点什么
+title: Niki的空间
+description: Stay hungry, stay foolish.
 theme: jekyll-theme-cayman
 
 url: "https://Aiyawen.github.io"
 baseurl: ""
 
-# 默认会把中文分类塞进 URL（变成 %E9%9A%8F%E7%AC%94 这种），改掉
 permalink: /:year/:month/:day/:title/
-
-# 中文文件名 / 中文标签需要，别删
 encoding: utf-8
 
-# 仓库名不是 用户名.github.io 时，baseurl 要改成 "/仓库名"
 plugins:
   - jekyll-feed
   - jekyll-sitemap

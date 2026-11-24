@@ -68,10 +68,13 @@ title: NiKi的空间
     </section>
     <section class="home-col panel-card">
       <h2>正在听</h2>
-      <div class="music-box">
-        <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="66" src="https://music.163.com/outchain/player?type=2&amp;id=2123807718&amp;auto=0&amp;height=66"></iframe>
-        <div class="panel-note">Color Your Night &middot; P3R</div>
-      </div>
+      <a class="vinyl-link" href="https://music.163.com/#/song?id=1331865888" target="_blank" rel="noopener" title="点击播放">
+        <div class="vinyl">
+          <img src="/assets/img/vinyl-cover.jpg" alt="恋与憧憬 封面" class="vinyl-label">
+        </div>
+      </a>
+      <div class="music-title">恋与憧憬</div>
+      <div class="music-artist">V.K克 &middot; 点击唱片播放</div>
     </section>
   </aside>
 

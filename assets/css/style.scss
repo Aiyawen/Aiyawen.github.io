@@ -150,3 +150,44 @@ body { background-color: #fdf2f6; }
   padding: 6px 0;
 }
 .contact-list a:hover { color: #9d174d; }
+
+/* ---- 任务栏 ---- */
+.task-list { list-style: none; padding: 0; margin: 10px 0 0; }
+.task-list li {
+  position: relative;
+  padding: 8px 0 8px 26px;
+  font-size: 14px;
+  color: #57534e;
+  border-bottom: 1px dashed #fbcfe8;
+}
+.task-list li:before {
+  content: '';
+  position: absolute;
+  left: 0; top: 50%;
+  transform: translateY(-50%);
+  width: 14px; height: 14px;
+  border: 1.5px solid #f472b6;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+.task-list li.done { color: #9d174d; text-decoration: line-through; }
+.task-list li.done:after {
+  content: '';
+  position: absolute;
+  left: 4px; top: 44%;
+  width: 4px; height: 8px;
+  border: solid #db2777;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+.panel-note { margin-top: 12px; font-size: 11px; color: #993556; }
+
+/* ---- 天气 ---- */
+.weather-box { display: flex; align-items: center; gap: 10px; margin-top: 8px; }
+.weather-icon { flex-shrink: 0; }
+.weather-temp { font-size: 22px; font-weight: 500; color: #9d174d; }
+.weather-desc { font-size: 11px; color: #57534e; }
+
+/* ---- 音乐 ---- */
+.music-box { margin-top: 8px; }
+

@@ -88,35 +88,58 @@ body { background-color: #fdf2f6; }
 }
 .gallery-grid img:hover { transform: translateY(-4px); box-shadow: 0 8px 20px rgba(219, 39, 119, 0.18); }
 
-/* ---- 任务栏 ---- */
+/* ---- 站点功能导航 ---- */
+.nav-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 12px; }
+.nav-item {
+  display: flex; align-items: center; gap: 7px;
+  background: #fdf2f8;
+  border: 1px solid #fbcfe8;
+  border-radius: 8px;
+  padding: 9px 10px;
+  text-decoration: none;
+  color: #4B1528;
+  font-size: 13px;
+  transition: transform 0.15s, background 0.15s;
+}
+.nav-item:hover { transform: translateY(-2px); background: #fce7ef; }
+.nav-dot { width: 7px; height: 7px; border-radius: 50%; background: #f472b6; flex-shrink: 0; }
+.task-heading { margin-top: 20px !important; }
+
+/* ---- 可勾选任务栏 ---- */
 .task-list { list-style: none; padding: 0; margin: 10px 0 0; }
-.task-list li {
-  position: relative;
-  padding: 8px 0 8px 26px;
-  font-size: 14px;
-  color: #57534e;
-  border-bottom: 1px dashed #fbcfe8;
+.task-list li { border-bottom: 1px dashed #fbcfe8; }
+.task-item {
+  display: flex; align-items: center; gap: 9px;
+  width: 100%;
+  padding: 8px 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  text-align: left;
+  font: inherit;
 }
-.task-list li:before {
-  content: '';
-  position: absolute;
-  left: 0; top: 50%;
-  transform: translateY(-50%);
-  width: 14px; height: 14px;
+.task-box {
+  width: 16px; height: 16px;
   border: 1.5px solid #f472b6;
-  border-radius: 3px;
-  box-sizing: border-box;
+  border-radius: 4px;
+  background: #fff;
+  flex-shrink: 0;
+  display: inline-flex; align-items: center; justify-content: center;
+  transition: background 0.2s, border-color 0.2s, transform 0.2s;
 }
-.task-list li.done { color: #9d174d; text-decoration: line-through; }
-.task-list li.done:after {
+.task-box:after {
   content: '';
-  position: absolute;
-  left: 4px; top: 44%;
   width: 4px; height: 8px;
-  border: solid #db2777;
+  border: solid #fff;
   border-width: 0 2px 2px 0;
-  transform: rotate(45deg);
+  transform: rotate(45deg) scale(0);
+  transition: transform 0.2s;
+  margin-top: -2px;
 }
+.task-text { font-size: 14px; color: #57534e; transition: color 0.2s; }
+.task-item.checked .task-box { background: #db2777; border-color: #db2777; transform: scale(1.08); }
+.task-item.checked .task-box:after { transform: rotate(45deg) scale(1); }
+.task-item.checked .task-text { color: #9d174d; text-decoration: line-through; }
 
 /* ---- 天气 ---- */
 .weather-box { display: flex; align-items: center; gap: 10px; margin-top: 8px; }

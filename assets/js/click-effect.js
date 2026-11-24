@@ -1,6 +1,6 @@
 (function () {
   var CHAR = '/assets/img/click-char.png';
-  var DELAY = 700;
+  var DELAY = 1500;
   // 预加载
   var pre = new Image(); pre.src = CHAR;
 

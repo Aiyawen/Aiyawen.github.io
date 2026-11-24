@@ -42,7 +42,7 @@ body { background-color: #fdf2f6; }
 }
 .panel-tall { flex: 1; }
 .panel-card { display: flex; flex-direction: column; flex: 1; }
-.panel-note { margin-top: 12px; font-size: 13px; color: #993556; }
+.panel-note { margin-top: 18px; font-size: 15px; color: #993556; text-align: center; }
 
 /* ---- 文章卡片 ---- */
 .post-list { list-style: none; padding-left: 0; margin-top: 16px; }
@@ -142,15 +142,15 @@ body { background-color: #fdf2f6; }
 .task-item.checked .task-text { color: #9d174d; text-decoration: line-through; }
 
 /* ---- 天气 ---- */
-.weather-box { display: flex; align-items: center; gap: 10px; margin-top: 8px; }
-.weather-icon { flex-shrink: 0; }
-.weather-temp { font-size: 28px; font-weight: 500; color: #9d174d; }
-.weather-desc { font-size: 14px; color: #57534e; }
+.weather-box { display: flex; align-items: center; justify-content: center; gap: 16px; margin-top: 24px; }
+.weather-icon { flex-shrink: 0; width: 72px !important; height: 72px !important; }
+.weather-temp { font-size: 58px; font-weight: 500; color: #9d174d; line-height: 1.1; }
+.weather-desc { font-size: 20px; color: #57534e; margin-top: 6px; }
 
 /* ---- 音乐唱片 ---- */
-.vinyl-link { display: block; text-align: center; margin: 14px auto 0; width: max-content; }
+.vinyl-link { display: block; text-align: center; margin: 26px auto 0; width: max-content; }
 .vinyl {
-  width: 120px; height: 120px;
+  width: 200px; height: 200px;
   border-radius: 50%;
   background: repeating-radial-gradient(circle at center, #2C2C2A 0, #2C2C2A 3px, #3a3a38 4px, #2C2C2A 5px);
   display: flex; align-items: center; justify-content: center;
@@ -159,7 +159,7 @@ body { background-color: #fdf2f6; }
   position: relative;
 }
 .vinyl-label {
-  width: 52px; height: 52px;
+  width: 88px; height: 88px;
   border-radius: 50%;
   object-fit: cover;
   border: 2px solid #fbcfe8;
@@ -167,14 +167,14 @@ body { background-color: #fdf2f6; }
 .vinyl:after {
   content: '';
   position: absolute;
-  width: 8px; height: 8px;
+  width: 12px; height: 12px;
   border-radius: 50%;
   background: #fdf2f6;
 }
 .vinyl-link:hover .vinyl { animation-play-state: paused; }
 @keyframes vinyl-spin { to { transform: rotate(360deg); } }
-.music-title { text-align: center; font-size: 16px; color: #9d174d; margin-top: 12px; font-weight: 500; }
-.music-artist { text-align: center; font-size: 13px; color: #993556; margin-top: 4px; }
+.music-title { text-align: center; font-size: 24px; color: #9d174d; margin-top: 16px; font-weight: 500; }
+.music-artist { text-align: center; font-size: 17px; color: #993556; margin-top: 6px; }
 
 /* ---- 文章内页 ---- */
 .main-content h1, .main-content h2, .main-content h3 { color: #9d174d; }

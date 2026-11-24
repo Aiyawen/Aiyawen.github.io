@@ -91,4 +91,4 @@ title: NiKi的空间
 
 <script src="/assets/js/panel.js"></script>
 
-<script src="/assets/js/click-effect.js"></script>
+<script src="/assets/js/click-effect.js?v=3"></script>
